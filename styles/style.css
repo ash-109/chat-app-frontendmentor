@@ -1,8 +1,43 @@
-.attribution {
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+
+  /* Colors  */
+      /* text */
+      --Pale-Violet: hsl(276, 100%, 81%);
+      --Moderate-Violet: hsl(276, 55%, 52%);
+      --Desaturated-Dark-Violet : hsl(271, 15%, 43%);
+      --Grayish-Blue : hsl(206, 6%, 79%);
+      --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+      --Dark-Grayish-Violet : hsl(270, 7%, 64%);
+
+      /* Background */
+      --Light-Magenta: hsl(293, 100%, 63%);
+      --Light-Violet: hsl(264, 100%, 61%);
+
+      /* Secondary */
+      --White: hsl(0, 0%, 100%);
+      --Light-Grayish-Violet: hsl(270, 20%, 96%);
+      --Very-Dark-Desaturated-Violet : hsl(271, 36%, 24%);
+      --Very-Light-Magenta : hsl(289, 100%, 72%);
+
+      /* Font */
+      --body-font-family:'Rubik';
+      
+}
+
+body{
+  font-family: var(--body-font-family);
+}
+
+
+
+
+/* .attribution {
   font-size: 16px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
-}
+} */
