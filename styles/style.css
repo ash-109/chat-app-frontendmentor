@@ -17,7 +17,6 @@
   /* Secondary */
   --White: hsl(0, 0%, 100%);
   --Light-Grayish-Violet: hsl(270, 20%, 96%);
-  --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
   --Very-Light-Magenta: hsl(289, 100%, 72%);
 
   /* Font */
@@ -32,7 +31,7 @@
 }
 body {
   font-family: var(--body-font-family);
-  background: var(--White);
+  background: var(--Light-Grayish-Violet);
   position: relative;
   display: flex;
   align-items: center;
@@ -43,7 +42,7 @@ body {
 
 .bg-violet {
   height: 80vh;
-  width: 27vw;
+  width: 380px;
   background: linear-gradient(
     to bottom,
     var(--Light-Magenta),
@@ -57,9 +56,126 @@ body {
   z-index: -1;
 }
 .container{
-  width: 50%;
   display: flex;
   align-items: center;
+  width: 80%;
+}
+.chat{
+  background: white;
+  padding: 12px;  
+  border-radius: 2rem;
+  width: 325px;
+  /* height: 560px; */
+}
+.chat_content{
+  height: 100%;
+}
+.chat_header{
+  display: flex;
+  background: linear-gradient(to right,var(--Light-Violet), var(--Light-Magenta));
+  height: 80px;
+align-items: end;
+position: relative;
+border-radius: 1.2rem 1.2rem 0 0;
+padding: 15px 20px;
+}
+.user-name{
+  color: var(--White);
+  font-size: 0.9rem;
+}
+.availability{
+color: var(--Very-Light-Magenta);
+font-size: 0.7rem;
+}
+.chat_header::before{
+  content: "";
+background: var(--White);
+height: 25px;
+width: 50%;
+position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+border-radius: 0 0 1.2rem 1.2rem;
+}
+.chat_header .avatar{
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid white;
+}
+
+
+.chat_body{
+  background: var(--Light-Grayish-Violet);
+  display: grid;
+border-radius: 0 0 1.8rem 1.8rem;
+overflow: hidden;
+font-size: 0.65rem;
+padding: 10px;
+height: 85%;
+row-gap: 0.6rem;
+}
+.message{
+  line-height: 0.9rem;
+  font-weight: 500;
+
+}
+.incoming_message{
+  background: var(--Grayish-Blue);
+  padding: 10px;
+  display: inline-block;
+justify-self: flex-start;
+align-self: center;
+width: 170px;
+color: var(--Moderate-Violet);
+border-radius: 0.9rem 0.9rem 0.9rem 0.4rem;
+}
+.responding_message{
+background: var(--White);
+justify-self: flex-end;
+display: inline-block;
+padding: 10px;
+align-self: center;
+border-radius: 0.9rem 0.9rem 0.4rem 0.9rem;
+color: var(--Desaturated-Dark-Violet);
+
+}
+.dogs_photos{
+  justify-content: end;
+  display: flex;
+  gap: 12px;
+}
+.dogs_photos img{
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+}
+.price{
+  background: var(--Light-Violet);
+  padding: 15px;
+  width: 210px;
+border-radius: 0.7rem 0.7rem 0.7rem 0.4rem;
+}
+.price strong{
+  color: var(--White);
+  font-size: 1rem;
+}
+
+.new_message{
+  width: 100%;
+  background: var(--White);
+  border-radius: 3rem;
+  padding: 15px;
+}
+.description{
+  width: 40%;
+}
+.description h1{
+color: var(--Very-Dark-Desaturated-Violet);
+}
+.description p{
+  color: var(--Dark-Grayish-Violet);
 }
 /* .attribution {
   font-size: 16px;
