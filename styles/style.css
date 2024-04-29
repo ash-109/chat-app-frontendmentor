@@ -37,11 +37,11 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .bg-violet {
-  height: 80vh;
+  height: 87vh;
   width: 380px;
   background: linear-gradient(
     to bottom,
@@ -58,14 +58,15 @@ body {
 .container{
   display: flex;
   align-items: center;
-  width: 80%;
+  width: 70%;
+  gap: 9rem;
 }
 .chat{
   background: white;
   padding: 12px;  
   border-radius: 2rem;
   width: 325px;
-  /* height: 560px; */
+  height:100%;
 }
 .chat_content{
   height: 100%;
@@ -113,7 +114,7 @@ border-radius: 0 0 1.8rem 1.8rem;
 overflow: hidden;
 font-size: 0.65rem;
 padding: 10px;
-height: 85%;
+/* height: 85%; */
 row-gap: 0.6rem;
 }
 .message{
@@ -153,7 +154,8 @@ color: var(--Desaturated-Dark-Violet);
 }
 .price{
   background: linear-gradient(to right,var(--Light-Magenta),var(--Light-Violet) );
-    padding: 15px;
+    padding: 14px 12px;
+    padding-right: 20px;
   width: 210px;
 border-radius: 0.7rem 0.7rem 0.7rem 0.4rem;
 display: flex;
@@ -184,9 +186,11 @@ color: var(--Pale-Violet);
 }
 .description h1{
 color: var(--Very-Dark-Desaturated-Violet);
+margin-bottom: 1.5rem;
 }
 .description p{
   color: var(--Dark-Grayish-Violet);
+  line-height: 1.7rem;
 }
 /* .attribution {
   font-size: 16px;
