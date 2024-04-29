@@ -74,10 +74,10 @@ body {
   display: flex;
   background: linear-gradient(to right,var(--Light-Violet), var(--Light-Magenta));
   height: 80px;
-align-items: end;
+  align-items: center;
 position: relative;
 border-radius: 1.2rem 1.2rem 0 0;
-padding: 15px 20px;
+padding: 40px 15px 15px;
 }
 .user-name{
   color: var(--White);
@@ -152,14 +152,25 @@ color: var(--Desaturated-Dark-Violet);
   border-radius: 15px;
 }
 .price{
-  background: var(--Light-Violet);
-  padding: 15px;
+  background: linear-gradient(to right,var(--Light-Magenta),var(--Light-Violet) );
+    padding: 15px;
   width: 210px;
 border-radius: 0.7rem 0.7rem 0.7rem 0.4rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.price .distance{
+  display: flex;
+  align-items: center;
+gap: 0.8rem;
+color: var(--Pale-Violet);
+
 }
 .price strong{
   color: var(--White);
   font-size: 1rem;
+  
 }
 
 .new_message{
