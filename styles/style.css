@@ -60,7 +60,7 @@ body {
   display: flex;
   align-items: center;
   width: 70%;
-  gap: 9rem;
+  gap: 7rem;
 }
 .chat{
   background: white;
@@ -206,5 +206,10 @@ margin-bottom: 1.5rem;
   .container{
     flex-direction: column;
     margin: 3rem auto;
+    gap: 3rem;
+  }
+  .description{
+    width: 100%;
+    text-align: center;
   }
 }
